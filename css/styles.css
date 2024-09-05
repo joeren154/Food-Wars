@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/images/wallpaper.png);
+    background-size: 100%;
+    background-repeat: 100%;
+}
+.hero header .logo a{
+    display: block;
+}
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+    background: transparent;
+    color: black;
+    border: 1px solid #f5dca8;
+    padding: 9px 20px;
+    border-radius: 80px;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+nav ul li a:not(:last-child) a:hover
+nav ul li a:not(:last-child) a:focus {
+    border-bottom: 2px solid white;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid red;
+}
+
+nav ul li.btn a{
+   background: transparent;
+   color: black;
+   border: 1px solid #f5dca8;
+   padding: 9px 20px;
+   border-radius: 80px;
+   line-height: 1.4;
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 150px;
+}
+.content{
+    padding-top: 140px;
+}
+
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.content .main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    
+}
+.content .main-text h1{
+    font-size: 60px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    line-height: 1;
+    color: black;
+    margin: 0px 0px 45px;
+    font-family: 'Permanent Marker', cursive;
+}
+.content .main-text p {
+    max-width: 100%;
+    padding-left: 50px;
+    width: 1000px;
+    color: black;
+    line-height: .8;
+    font-size: 22px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+.footer{
+	background-color: black;
+    background-size: 100%;
+	color: gray;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 13px;
+}
