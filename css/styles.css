@@ -46,7 +46,6 @@ nav ul li a{
     border-bottom: 2px solid transparent;
     transition: .4s;
     background: transparent;
-    color: black;
     border: 1px solid #f5dca8;
     padding: 9px 20px;
     border-radius: 80px;
@@ -124,12 +123,20 @@ nav ul li.btn:hover a{
     font-weight: bold;
     
 }
-.footer{
-	background-color: black;
-    background-size: 100%;
-	color: gray;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
-	font-size: 13px;
+.footer {
+    background-color: #333; /* Darker shade for better contrast */
+    color: #ccc; /* Lighter gray for better readability */
+    padding: 40px 20px; /* Adjusted padding for a balanced look */
+    text-align: center;
+    font-size: 14px; /* Slightly larger font size for readability */
+    border-top: 2px solid #555; /* Subtle top border for separation */
+}
+
+.footer a {
+    color: #f4f4f4; /* Light color for links to stand out */
+    text-decoration: none; /* Remove underline for a cleaner look */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction */
 }
