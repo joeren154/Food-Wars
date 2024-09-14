@@ -1,142 +1,129 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
-
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-.main-width{
+.main-width {
     width: 1400px;
     max-width: 95%;
     margin: 0 auto;
 }
-.hero{
+
+.hero {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background-image: url(/images/wallpaper.png);
-    background-size: 100%;
-    background-repeat: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
 }
-.hero header .logo a{
-    display: block;
-}
-.hero header{
+
+.hero header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0 30px;    
+    padding: 20px 0;
 }
-nav ul li{
+
+.hero header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    gap: 40px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: black;
-    margin-left: 80px;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: .4s;
-    background: transparent;
-    border: 1px solid #f5dca8;
-    padding: 9px 20px;
-    border-radius: 80px;
-    line-height: 1.4;
+    color: white;
     font-size: 18px;
-    font-weight: 600;
-}
-nav ul li a:hover{
-    border: 1px solid white;
-    color: black;
-    background: white;
-    transition: .4s;
-}
-nav ul li a:not(:last-child) a:hover
-nav ul li a:not(:last-child) a:focus {
-    border-bottom: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li.active a{
-    border-bottom: 2px solid red;
+nav ul li a:hover {
+    background-color: #f5dca8;
+    color: #333;
 }
 
-nav ul li.btn a{
-   background: transparent;
-   color: black;
-   border: 1px solid #f5dca8;
-   padding: 9px 20px;
-   border-radius: 80px;
-   line-height: 1.4;
-   font-size: 18px;
-   font-weight: 600;
-   margin-left: 150px;
-}
-.content{
-    padding-top: 140px;
+nav ul li.active a {
+    background-color: #ff6f61;
+    color: white;
 }
 
-nav ul li.btn:hover a{
-    border: 1px solid white;
-    color: black;
-    background: white;
-    transition: .4s;
+nav ul li.btn a {
+    background-color: #f5dca8;
+    color: #333;
+    font-weight: bold;
 }
-.content .main-text{
+
+nav ul li.btn a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.content {
+    padding: 100px 0;
+    text-align: left;
+    color: white;
+}
+
+.content .main-text {
     position: relative;
     z-index: 2;
-    margin-bottom: 50px;
-}
-.content .main-text h6{
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 10px;
-    padding-left: 50px;
-    
-}
-.content .main-text h1{
-    font-size: 60px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    line-height: 1;
-    color: black;
-    margin: 0px 0px 45px;
-    font-family: 'Permanent Marker', cursive;
-}
-.content .main-text p {
-    max-width: 100%;
-    padding-left: 50px;
-    width: 1000px;
-    color: black;
-    line-height: .8;
-    font-size: 22px;
-    margin-bottom: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    
-}
-.footer {
-    background-color: #333; /* Darker shade for better contrast */
-    color: #ccc; /* Lighter gray for better readability */
-    padding: 40px 20px; /* Adjusted padding for a balanced look */
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 14px; /* Slightly larger font size for readability */
-    border-top: 2px solid #555; /* Subtle top border for separation */
+}
+
+.content .main-text h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}
+
+.content .main-text h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 30px;
+}
+
+.content .main-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #eaeaea;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #444;
 }
 
 .footer a {
-    color: #f4f4f4; /* Light color for links to stand out */
-    text-decoration: none; /* Remove underline for a cleaner look */
+    color: #f5dca8;
+    text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Underline on hover for better interaction */
+    text-decoration: underline;
 }
